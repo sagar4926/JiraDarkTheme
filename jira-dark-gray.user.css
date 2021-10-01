@@ -802,3 +802,25 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #222 !important;
     }
 }
+
+
+@-moz-document regexp(".*.atlassian.net/secure/Dashboard.*") {
+    div[color="color4"] {
+        background-color: #333 !important;
+    }
+    table.aui>thead>tr, table.aui>tbody>tr {
+        background-color: #333 !important;
+    }
+    table.aui>thead tr th.active {
+        background-color: #444;
+    }
+    table.aui>thead tr.focused, table.aui>thead tr:hover {
+        background-color: #555;
+    }
+    table.aui>thead .sortable:hover, table.aui>thead .sortable:hover {
+        background-color: #555;
+    }
+    table.aui>tbody>tr.focused, table.aui>tbody>tr:hover {
+        background-color: #555;
+    }
+}
